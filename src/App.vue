@@ -35,8 +35,8 @@
           <div class="max-w-2xl mx-auto mb-20 text-center">
             <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">CSV Artikel Verarbeitung</h1>
             <p class="mt-6 text-lg leading-8 text-gray-600">
-              Diese App erleichtert die Verarbeitung von Artikel-Daten. Laden Sie die Beispiel-CSV-Datei herunter und
-              importieren Sie sie mit nur einem Klick.
+              Diese App erleichtert dir die Verarbeitung von Artikel-Daten. Lade die Beispiel-CSV-Datei herunter und
+              importiere sie mit nur einem Klick.
             </p>
 
             <div class="flex items-center justify-center mt-10 gap-x-6">
@@ -48,7 +48,13 @@
                 <input id="fileInput" accept=".csv" name="file" type="file" class="hidden" @change="handleFileUpload" />
               </label>
 
-              <a href="https://gera814.github.io/vue-csv-manager/Artikel.csv" target="_blank" class="text-sm font-semibold leading-6 text-gray-900"> Besipiel CSV Herunterlanden </a>
+              <a
+                href="https://gera814.github.io/vue-csv-manager/Artikel.csv"
+                target="_blank"
+                class="text-sm font-semibold leading-6 text-gray-900"
+              >
+                Besipiel CSV Herunterlanden
+              </a>
             </div>
           </div>
           <div class="flow-root">
@@ -57,7 +63,7 @@
                 <div v-if="!imported" class="flex flex-col items-center py-8">
                   <img class="w-auto h-20 opacity-20" src="@/assets/img/empty-icon.png" alt="empty state" />
                   <h1 class="mt-4 text-xl font-semibold leading-6 text-gray-900">Keine Daten vorhanden</h1>
-                  <p class="mt-2 text-sm text-gray-700">
+                  <p class="mt-2 text-sm text-center text-gray-700">
                     Es scheint, als hättest du noch keine Datei zur Verarbeitung importiert.
                   </p>
                 </div>
