@@ -48,7 +48,7 @@
                 <input id="fileInput" accept=".csv" name="file" type="file" class="hidden" @change="handleFileUpload" />
               </label>
 
-              <a href="" class="text-sm font-semibold leading-6 text-gray-900"> Besipiel CSV Herunterlanden </a>
+              <a href="https://gera814.github.io/vue-csv-manager/Artikel.csv" target="_blank" class="text-sm font-semibold leading-6 text-gray-900"> Besipiel CSV Herunterlanden </a>
             </div>
           </div>
           <div class="flow-root">
