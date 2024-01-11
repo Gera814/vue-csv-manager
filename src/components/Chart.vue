@@ -51,6 +51,18 @@ const createChart = (filteredData) => {
             },
           },
         },
+        tooltip: {
+          callbacks: {
+            label: function (tooltipItem) {
+              const data = tooltipItem.dataset.data
+              const total = data.reduce((acc, value) => acc + value, 0)
+              const currentValue = tooltipItem.raw
+              const percentage = Math.round((currentValue / total) * 100)
+
+              return `${tooltipItem.label}: ${tooltipItem.raw} - ${percentage}%`
+            },
+          },
+        },
       },
     },
   })
